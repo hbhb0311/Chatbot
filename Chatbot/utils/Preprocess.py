@@ -31,3 +31,15 @@ class Preprocess:
             if f(p[1]) is False:
                 word_list.append(p if without_tag is False else p[0])
         return word_list
+
+    def get_wordidx_sequence(self, keywords):
+        if self.word_index is None:
+            return []
+        w2i = []
+        for word in keywords:
+            try:
+                w2i.append(self.word_index[word])
+            except KeyError:
+                w2i.append(self.word_index['OOV'])
+
+        return w2i

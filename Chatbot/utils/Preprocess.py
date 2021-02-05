@@ -23,7 +23,7 @@ class Preprocess:
     def pos(self, sentence):
         return self.komoran.pos(sentence)
 
-    def get_kewords(self, pos, without_tag = False):
+    def get_keywords(self, pos, without_tag = False):
         f = lambda x : x in self.exclusion_tags
         word_list = []
 

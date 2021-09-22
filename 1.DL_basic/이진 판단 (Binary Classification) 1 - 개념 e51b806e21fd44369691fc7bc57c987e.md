@@ -54,9 +54,7 @@ odds = 0.75 / 0.25 = 3
 
 logit의 장점 → 넓은 범위의 값을 간단하게 표현 가능, 변화량보다는 비율 관점에서 더 민감하게 포착 가능
 
-![Logit](./img/Untitled 1.png)
-
-
+![Logit](./img/Untitled1.png)
 
 → 로짓함수와 시그모이드함수는 `역함수` 관계
 
@@ -142,21 +140,21 @@ $Q_T =\sigma(x)$ ,  $Q_F = 1-\sigma(x)$
 
 $H(P, Q)=−∑p(x_i)logq(x_i)$ $= -zlog\sigma(x) -(1-z)log(1-\sigma(x))$
 
-![%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%202.png](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%202.png)
+![odds](./img/Untitled2.png)
 
 위의 식을 대입하면
 
 → 
 
-![%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%203.png](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%203.png)
+![odds](./img/Untitled3.png)
 
 → 이진 판단에서는 z = 0 or z = 1
 
-![%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%204.png](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%204.png)
+![odds](./img/Untitled4.png)
 
 → H의 편미분
 
-![%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%205.png](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%205.png)
+![odds](./img/Untitled5.png)
 
 [+) 시그모이드 미분](https://en.m.wikipedia.org/wiki/Logistic_function#Derivative)
 
@@ -189,7 +187,7 @@ print(sigmoid(1000))
 
 →  식 변경
 
-![%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%206.png](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%206.png)
+![odds](./img/Untitled6.png)
 
 ```python
 def sigmoid(x):
@@ -213,7 +211,7 @@ crossentropy(-1000)
 
 → 식 변경
 
-![%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%207.png](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%207.png)
+![odds](./img/Untitled7.png)
 
 ```python
 def crossentropy(x):
@@ -225,10 +223,11 @@ crossentropy(-1000)
 
 하지만, 이러한 식 변형은 x가 음수일때만 해줘야함. 양수일때는 본래의 식을 사용 
 
-![%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%208.png](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%208.png)
+![odds](./img/Untitled8.png)
 
 → 처리 과정이 복잡해 아래의 식으로 변경해줌 
 
 ⇒ max 함수와 절대값을 이용해 쉽게 적용할 수 있다.
 
-![%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%209.png](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB%20(Binary%20Classification)%201%20-%20%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20e51b806e21fd44369691fc7bc57c987e/Untitled%209.png)
+![odds](./img/Untitled9.png)
+

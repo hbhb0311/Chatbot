@@ -42,7 +42,7 @@ EX) 회귀분석에서는 MSE(평균제곱오차) 사용
 
 즉, odds가 클수록 성공확률이 크다는 것을 의미
 
-![odds]('img/Untitled.png')
+![odds]('./img/Untitled.png')
 
 EX) 경마에서 특정 말이 이길 확률이 75%라고 한다면,
 
@@ -54,7 +54,7 @@ odds = 0.75 / 0.25 = 3
 
 logit의 장점 → 넓은 범위의 값을 간단하게 표현 가능, 변화량보다는 비율 관점에서 더 민감하게 포착 가능
 
-![Logit]('img/Untitled 1.png')
+![Logit]('./img/Untitled 1.png')
 
 → 로짓함수와 시그모이드함수는 `역함수` 관계
 
